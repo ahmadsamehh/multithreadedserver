@@ -1,22 +1,23 @@
+# Simple HTTP Server in Rust
 
-Simple HTTP Server in Rust
+This Rust project implements a basic HTTP server that listens on `127.0.0.1:9000`. It serves different HTML pages based on the URL path requested by the client. The server supports three routes:
 
-This Rust project implements a basic HTTP server that listens on 127.0.0.1:9000. It serves different HTML pages based on the URL path requested by the client. The server supports three routes:
+- `/` serves `hello.html`
+- `/help` serves `help.html`
+- Any other path serves `error.html`
 
-/ serves hello.html
-/help serves help.html
-Any other path serves error.html
-Requirements
+## Requirements
 
-Rust (latest stable version)
-Usage
+- Rust (latest stable version)
 
-Clone this repository.
-Make sure to have the following HTML files in the src folder:
-hello.html
-help.html
-error.html
-Run the server with:
+## Usage
+
+1. Clone this repository.
+2. Make sure to have the following HTML files in the `src` folder:
+    - `hello.html`
+    - `help.html`
+    - `error.html`
+3. Run the server with:
+
+```bash
 cargo run
-The server will start and listen on http://127.0.0.1:9000.
-
